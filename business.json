@@ -1,0 +1,63 @@
+{
+  "business": [
+    {
+      "tag": "consumer",
+      "forms": [
+        {
+          "tag": "newMoney",
+          "subforms": []
+        },
+        { "tag": "existing", "subforms": [] },
+        {
+          "tag": "serviceTasks",
+          "subforms": [
+            {
+              "tag": "onBoarding",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 3] },
+                { "tag": "transactionDetails", "id": [1, 2] },
+                { "tag": "documentSummary", "id": [1] }
+              ]
+            },
+            { "tag": "aFUnderLimit", "sections": [] },
+            { "tag": "customerManagment", "sections": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "commercial",
+      "forms": [
+        {
+          "tag": "newMoney",
+          "subforms": []
+        },
+        { "tag": "existing", "subforms": [] },
+        {
+          "tag": "serviceTasks",
+          "name": "Service Tasks",
+          "subforms": [
+            {
+              "tag": "onBoarding",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 13] },
+                { "tag": "transactionDetails", "id": [6, 15] },
+                { "tag": "documentSummary", "id": [5] },
+                { "tag": "additionalInformation", "id": [1] }
+              ]
+            },
+            { "tag": "aFUnderLimit", 
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 13] },
+                { "tag": "transactionDetails", "id": [6, 15] },
+                { "tag": "documentSummary", "id": [5] },
+                { "tag": "additionalInformation", "id": [1] }
+
+              ] },
+            { "tag": "customerManagment", "sections": [] }
+          ]
+        }
+      ]
+    }
+  ]
+}
