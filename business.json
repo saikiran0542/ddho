@@ -5,7 +5,83 @@
       "forms": [
         {
           "tag": "newMoney",
-          "subforms": []
+          "subforms": [
+            {
+              "tag": "newCustomer",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 3, 6, 7, 8, 9] },
+                {
+                  "tag": "transactionDetails",
+                  "id": [1, 2, 3, 4, 6, 7, 12, 13, 14]
+                },
+                { "tag": "documentSummary", "id": [1, 2, 3, 4, 5, 6, 7] },
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "creditDetails", "id": [1, 2] },
+                { "tag": "productDetails", "id": [1, 2, 3, 4, 5, 6, 7, 9] },
+                { "tag": "securityDetails", "id": [1, 2, 3] }
+              ]
+            },
+            {
+              "tag": "newCustomer",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 3, 4, 6, 7, 8, 9] },
+                {
+                  "tag": "transactionDetails",
+                  "id": [1, 2, 3, 4, 6, 7, 12, 13, 14]
+                },
+                { "tag": "documentSummary", "id": [1, 2, 3, 4, 5, 6, 7] },
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "creditDetails", "id": [1, 2] },
+                { "tag": "productDetails", "id": [1, 2, 3, 4, 5, 6, 7, 8, 9] },
+                { "tag": "securityDetails", "id": [1, 2, 3] }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "existing",
+          "subforms": [
+            {
+              "tag": "loanTermExtension",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 4, 5, 9] },
+                {
+                  "tag": "transactionDetails",
+                  "id": [2, 3, 4, 5, 6, 12, 13, 14]
+                },
+                { "tag": "documentSummary", "id": [1, 2, 3, 4, 5, 6, 7] },
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "creditDetails", "id": [1] },
+                { "tag": "productDetails", "id": [4, 5, 6, 8] }
+              ]
+            },
+            {
+              "tag": "renegotiationsRestructureReprice",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 3, 4, 6, 7, 8, 9] },
+                {
+                  "tag": "transactionDetails",
+                  "id": [2, 3, 4, 5, 6, 12, 13, 14]
+                },
+                { "tag": "documentSummary", "id": [1, 2, 3, 4, 5, 6, 7] },
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "creditDetails", "id": [1, 2] },
+                { "tag": "productDetails", "id": [4, 5, 6, 8] }
+              ]
+            },
+            {
+              "tag": "discharge",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 4] },
+                {
+                  "tag": "transactionDetails",
+                  "id": [4, 6]
+                },
+                { "tag": "documentSummary", "id": [2, 3, 4, 5, 6, 7] },
+                { "tag": "additionalInformation", "id": [1] }
+              ]
+            }
+          ]
         },
         { "tag": "existing", "subforms": [] },
         {
@@ -30,31 +106,291 @@
       "forms": [
         {
           "tag": "newMoney",
-          "subforms": []
-        },
-        { "tag": "existing", "subforms": [] },
-        {
-          "tag": "serviceTasks",
-          "name": "Service Tasks",
+          "name": "New Money",
           "subforms": [
             {
-              "tag": "onBoarding",
+              "tag": "newCustomer ",
               "sections": [
-                { "tag": "customerDetails", "id": [1, 2, 13] },
-                { "tag": "transactionDetails", "id": [6, 15] },
-                { "tag": "documentSummary", "id": [5] },
+                {
+                  "tag": "customerDetails",
+                  "id": [1, 2, 3, 6, 10, 12, 14, 15]
+                },
+                {
+                  "tag": "transactionDetails",
+                  "id": [1, 2, 3, 4, 5, 6, 14, 15, 16, 21, 22, 23]
+                },
+                { "tag": "documentSummary", "id": [1, 2, 3, 4, 5] },
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "creditDetails", "id": [1, 2, 3, 5] },
+                {
+                  "tag": "productDetails",
+                  "id": [1, 2, 3, 4, 5, 6, 7, 8, 9, 11]
+                },
+                { "tag": "securityDetails", "id": [1, 5] }
+              ]
+            },
+            {
+              "tag": " existingCustomer",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 3, 4, 6, 12, 14, 15] },
+                {
+                  "tag": "transactionDetails",
+                  "id": [1, 3, 4, 5, 6, 7, 9, 10, 15, 16, 21, 22, 23]
+                },
+                { "tag": "documentSummary", "id": [1, 2, 3, 4, 5] },
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "creditDetails", "id": [1, 2, 3, 4, 5] },
+                {
+                  "tag": "productDetails",
+                  "id": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+                },
+                { "tag": "securityDetails", "id": [1, 5] }
+              ]
+            },
+            {
+              "tag": "newCustomerLess",
+              "sections": [
+                {
+                  "tag": "customerDetails",
+                  "id": [1, 2, 3, 6, 10, 11, 12, 14, 15]
+                },
+                {
+                  "tag": "transactionDetails",
+                  "id": [1, 2, 4, 5, 6, 11, 12, 13, 14, 15, 16, 21, 22, 23]
+                },
+                { "tag": "documentSummary", "id": [1, 2, 3, 4, 5] },
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "creditDetails", "id": [1, 2, 3, 5] },
+                {
+                  "tag": "productDetails",
+                  "id": [1, 2, 3, 4, 5, 6, 7, 8, 9, 11]
+                },
+                { "tag": "securityDetails", "id": [1, 2, 3, 4, 5] }
+              ]
+            },
+            {
+              "tag": "existingCustomerLess",
+              "sections": [
+                {
+                  "tag": "customerDetails",
+                  "id": [1, 2, 3, 4, 6, 11, 12, 14, 15]
+                },
+                {
+                  "tag": "transactionDetails",
+                  "id": [1, 4, 5, 6, 7, 9, 10, 11, 12, 13, 15, 16, 21, 22, 23]
+                },
+                { "tag": "documentSummary", "id": [1, 2, 3, 4, 5] },
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "creditDetails", "id": [1, 2, 3, 4, 5] },
+                {
+                  "tag": "productDetails",
+                  "id": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+                },
+                { "tag": "securityDetails", "id": [1, 2, 3, 4, 5] }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "existing",
+          "name": " Existing",
+          "subforms": [
+            {
+              "tag": "annaulReview",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 4, 14] },
+                { "tag": "transactionDetails", "id": [6, 7, 10, 15] },
+                { "tag": "documentSummary", "id": [2, 3, 5] },
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "creditDetails", "id": [3, 4] },
+                { "tag": "productDetails", "id": [10] }
+              ]
+            },
+
+            {
+              "tag": "loanTermExtension",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 4, 5, 14, 15] },
+                {
+                  "tag": "transactionDetails",
+                  "id": [3, 5, 6, 7, 8, 9, 15, 21, 22, 23]
+                },
+                { "tag": "documentSummary", "id": [1, 2, 3, 4, 5] },
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "creditDetails", "id": [1, 3, 4] },
+                { "tag": "productDetails", "id": [6, 7, 10] }
+              ]
+            },
+
+            {
+              "tag": "renegotiationsRestructureReprice",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 4, 5, 14, 15] },
+                {
+                  "tag": "transactionDetails",
+                  "id": [3, 5, 6, 7, 9, 15, 21, 22, 23]
+                },
+                { "tag": "documentSummary", "id": [1, 2, 3, 4, 5] },
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "creditDetails", "id": [1, 3, 4] },
+                { "tag": "productDetails", "id": [5, 6, 7, 10] }
+              ]
+            },
+            {
+              "tag": "discharge",
+              "sections": [
+                { "tag": "customerDetails", "id": [1, 2, 4, 13] },
+                { "tag": "transactionDetails", "id": [6, 15, 17, 18, 19.2] },
+                { "tag": "documentSummary", "id": [2, 3, 4, 5] },
                 { "tag": "additionalInformation", "id": [1] }
               ]
             },
-            { "tag": "aFUnderLimit", 
+            {
+              "tag": "conventMonitoring",
               "sections": [
-                { "tag": "customerDetails", "id": [1, 2, 13] },
+                { "tag": "customerDetails", "id": [1, 2, 4] },
                 { "tag": "transactionDetails", "id": [6, 15] },
                 { "tag": "documentSummary", "id": [5] },
-                { "tag": "additionalInformation", "id": [1] }
+                { "tag": "additionalInformation", "id": [1] },
+                { "tag": "productDetails", "id": [10] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
 
-              ] },
-            { "tag": "customerManagment", "sections": [] }
+    {
+      "tag": "serviceTasks",
+      "name": "Service Tasks",
+      "subforms": [
+        {
+          "tag": "onBoarding",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2, 13] },
+            { "tag": "transactionDetails", "id": [6, 15] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+        {
+          "tag": "aFUnderLimit",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2, 13] },
+            { "tag": "transactionDetails", "id": [6, 15] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+
+        {
+          "tag": "tBManagement",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2, 13] },
+            { "tag": "transactionDetails", "id": [6, 15] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+        {
+          "tag": "customerManagment",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2, 13] },
+            { "tag": "transactionDetails", "id": [6, 15] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+        {
+          "tag": "progressPayment",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2, 13] },
+            { "tag": "transactionDetails", "id": [6, 15] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+        {
+          "tag": "valuations",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2, 13] },
+            { "tag": "transactionDetails", "id": [6, 15] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+        {
+          "tag": "bizExpressSettlement",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2, 13] },
+            { "tag": "transactionDetails", "id": [6, 15] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+        {
+          "tag": "payoutFigure",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2] },
+            { "tag": "transactionDetails", "id": [6, 15] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+        {
+          "tag": "consent",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2] },
+            { "tag": "transactionDetails", "id": [6, 15] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+        {
+          "tag": "aFRiskProfileUpdate",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2] },
+            { "tag": "transactionDetails", "id": [6, 15] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+        {
+          "tag": "bankGuarenteesUnderLimit",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2] },
+            { "tag": "transactionDetails", "id": [6, 15] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+        {
+          "tag": "collaterallCMSInvestigation",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2] },
+            { "tag": "transactionDetails", "id": [6, 15, 21, 22, 23] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+
+        {
+          "tag": "refundReversalWriteOffs",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2] },
+            { "tag": "transactionDetails", "id": [6, 15, 21, 22, 23] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
+          ]
+        },
+
+        {
+          "tag": "investigations",
+          "sections": [
+            { "tag": "customerDetails", "id": [1, 2] },
+            { "tag": "transactionDetails", "id": [6, 15, 21, 22, 23] },
+            { "tag": "documentSummary", "id": [5] },
+            { "tag": "additionalInformation", "id": [1] }
           ]
         }
       ]
